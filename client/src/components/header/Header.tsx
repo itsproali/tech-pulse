@@ -75,7 +75,7 @@ const Header = () => {
                                         {item.name}
                                     </Link>
                                 ))}
-                                {!isLoading && currentUser?.data?.role === 'admin' && (
+                                {!isLoading && userIsPresent && currentUser?.data?.role === 'admin' && (
                                     <Link href="/admin-dashboard" className="text-secondary hover:text-primary flex items-center">
                                         <LayoutDashboard className="w-4 h-4 mr-2" />
                                         Dashboard
@@ -94,13 +94,13 @@ const Header = () => {
                             <div className="hidden md:block">
                                 {isLoading ? (
                                     <Skeleton className="h-4 w-[150px]" />
-                                ) : userIsPresent ? (
+                                ) : userIsPresent && currentUser ? (
                                     <DropdownMenu>
                                         <DropdownMenuTrigger asChild>
                                             <Button variant="ghost" className="relative h-8 w-8 rounded-full">
                                                 <Avatar className="h-8 w-8">
-                                                    <AvatarImage src={currentUser.data?.profileImg} alt={currentUser.data?.name} />
-                                                    <AvatarFallback>{currentUser.data?.name?.[0]}</AvatarFallback>
+                                                    <AvatarImage src={currentUser?.data?.profileImg} alt={currentUser?.data?.name} />
+                                                    <AvatarFallback>{currentUser?.data?.name?.[0]}</AvatarFallback>
                                                 </Avatar>
                                             </Button>
                                         </DropdownMenuTrigger>
@@ -155,7 +155,7 @@ const Header = () => {
                                     </Link>
                                 )}
                                 {!isLoading && (
-                                    currentUser ? (
+                                    userIsPresent && currentUser ? (
                                         <>
                                             <Link
                                                 href="/profile"
