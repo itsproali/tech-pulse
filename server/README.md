@@ -10,8 +10,8 @@ Tech Pulse is a full-stack application  to help tech enthusiasts navigate and ma
 ## Table of Contents
 
 - [Tech Pulse](#tech-pulse)
-  - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
+  - [Credentials](#credentials)
   - [Features](#features)
   - [Tech Stack](#tech-stack)
   - [Prerequisites](#prerequisites)
@@ -23,6 +23,16 @@ Tech Pulse is a full-stack application  to help tech enthusiasts navigate and ma
 ## Introduction
 
 Tech Pulse is a full-stack web app that empowers users with expert advice, practical tech solutions, and user-generated content. Explore tutorials, reviews, and recommendations, or share your own tips to enhance your digital life
+
+## Credentials
+```
+Admin Email: admin@admin.com
+Admin Password: admin123
+```
+```
+User Email: user@user.com
+User Password: user123
+```
 
 ## Features
 
